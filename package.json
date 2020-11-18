@@ -1,0 +1,8 @@
+{
+  "name": "devtree",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {}
+}
