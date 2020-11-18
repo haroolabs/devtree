@@ -1,3 +1,3 @@
 # devtree
 Useful resources and tools for development.\
-Made by Lucas Choi
+Made by Lucas Choi.
