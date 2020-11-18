@@ -1,7 +1,9 @@
 # eslint-config-react-pack
 
 <p align="center">
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+  ![License MIT](https://img.shields.io/github/license/tetritz/devtree?style=for-the-badge)
+
 </p>
 
 A simple ESLint, Prettier configuration for React, Next.js development.\
