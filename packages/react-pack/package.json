@@ -28,9 +28,9 @@
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "link:compiled/eslint-plugin-jsx-a11y",
+    "eslint-plugin-jsx-a11y": "file:compiled/eslint-plugin-jsx-a11y",
     "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "link:compiled/eslint-plugin-react",
+    "eslint-plugin-react": "file:compiled/eslint-plugin-react",
     "eslint-plugin-react-hooks": "^4.2.0",
     "prettier": "^2.1.2",
     "typescript": "^4.0.5"
