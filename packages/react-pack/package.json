@@ -1,6 +1,6 @@
 {
   "name": "@devtree/react-pack",
-  "version": "0.0.3",
+  "version": "0.0.4-alpha.2",
   "description": "Simple tools and ESLint, Prettier configuration for React, Next.js development",
   "files": [
     "compiled",
@@ -8,6 +8,7 @@
     "prettier.js"
   ],
   "scripts": {
+    "git:push": "git add . && git commit -m 'init' && git push",
     "publish:patch": "npm version patch && npm publish"
   },
   "repository": {
