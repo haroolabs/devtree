@@ -80,6 +80,7 @@ module.exports = {
         'no-nested-ternary': 'off',
         'no-param-reassign': 'off',
         'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
+        'no-undef': 'off',
         'no-use-before-define': 'off',
         'react/jsx-filename-extension': [
           'error',
