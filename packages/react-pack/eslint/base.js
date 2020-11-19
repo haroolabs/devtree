@@ -7,8 +7,8 @@ module.exports = {
     es2020: true,
   },
   extends: [
-    require.resolve('eslint-config-airbnb'),
-    'airbnb/hooks',
+    require.resolve('./airbnb'),
+    // require.resolve('./airbnb/hooks'),
     'plugin:prettier/recommended',
     'prettier/react',
   ],
@@ -45,8 +45,8 @@ module.exports = {
     {
       files: ['**/*.ts', '**/*.tsx'],
       extends: [
-        'airbnb',
-        'airbnb/hooks',
+        require.resolve('./airbnb'),
+        // require.resolve('./airbnb/hooks'),
         'plugin:@typescript-eslint/eslint-recommended',
         'plugin:@typescript-eslint/recommended',
         'plugin:prettier/recommended',
