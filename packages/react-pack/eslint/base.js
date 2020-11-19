@@ -6,7 +6,12 @@ module.exports = {
     node: true,
     es2020: true,
   },
-  extends: [require.resolve('eslint-config-airbnb'), 'airbnb/hooks', 'plugin:prettier/recommended'],
+  extends: [
+    require.resolve('eslint-config-airbnb'),
+    'airbnb/hooks',
+    'plugin:prettier/recommended',
+    'prettier/react',
+  ],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -26,16 +31,12 @@ module.exports = {
     'no-param-reassign': 'off',
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
     'no-use-before-define': 'off',
-    'prettier/prettier': ['warn'],
     'react/jsx-one-expression-per-line': 'off',
     'react/jsx-props-no-spreading': 'off',
   },
   settings: {
     react: {
       version: 'detect',
-    },
-    prettier: {
-      singleQuote: true,
     },
   },
 
@@ -80,7 +81,6 @@ module.exports = {
         'no-param-reassign': 'off',
         'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
         'no-use-before-define': 'off',
-        'prettier/prettier': ['warn'],
         'react/jsx-filename-extension': [
           'error',
           {

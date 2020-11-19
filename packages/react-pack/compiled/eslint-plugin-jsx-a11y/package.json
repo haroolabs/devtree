@@ -1,0 +1,7 @@
+{
+  "name": "eslint-plugin-jsx-a11y",
+  "version": "6.4.1",
+  "author": "Ethan Cohen",
+  "main": "index.js",
+  "license": "MIT"
+}

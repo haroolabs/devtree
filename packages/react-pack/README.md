@@ -1,21 +1,21 @@
-# eslint-config-react-pack
+# @devtree/react-pack
 
 <p align="center">
   <img src="https://img.shields.io/github/license/tetritz/devtree?style=for-the-badge" alt="License MIT">
 </p>
 
-A simple ESLint, Prettier configuration for React, Next.js development.\
-This configuration for <b>TypeScript</b> projects.
+This package includes the shareable ESLint configuration,
+Prettier configuration for React, Next.js <b>TypeScript</b> development.
 
 ## Installation
-- If you use npm,
+- Using npm:
 ```shell script
-npm i @devtree/eslint-config-react-pack
+npm i @devtree/react-pack
 ```
 
-- Or if you use yarn,
+- or using yarn:
 ```shell script
-yarn add @devtree/eslint-config-react-pack
+yarn add -D @devtree/react-pack
 ```
 
 ## Usage
@@ -26,7 +26,7 @@ yarn add @devtree/eslint-config-react-pack
 {
   "eslintConfig": {
     "extends": [
-      "@devtree/react-pack/base"
+      "@devtree/react-pack/eslint/base"
     ]
   }
 } 
@@ -35,10 +35,7 @@ yarn add @devtree/eslint-config-react-pack
 - Or, `.eslintrc.json`
 ```json
 {
-  "root": true,
-  "extends": [
-    "@devtree/react-pack/base"
-  ]
+  "extends": "@devtree/react-pack/base"
 }
 ```
 
@@ -46,10 +43,7 @@ yarn add @devtree/eslint-config-react-pack
 - `.eslintrc.json`
 ```json
 {
-  "root": true,
-  "extends": [
-    "@devtree/react-pack/next"
-  ]
+  "extends": "@devtree/react-pack/next"
 }
 ```
 
