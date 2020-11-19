@@ -1,6 +1,6 @@
 {
   "name": "@devtree/react-pack",
-  "version": "0.0.4-alpha.2",
+  "version": "0.0.4-alpha.1",
   "description": "Simple tools and ESLint, Prettier configuration for React, Next.js development",
   "files": [
     "compiled",
@@ -9,7 +9,10 @@
   ],
   "scripts": {
     "git:push": "git add . && git commit -m 'init' && git push",
-    "publish:patch": "npm version patch && npm publish"
+    "publish:patch": "npm version patch && npm publish",
+    "publish:alpha": "npm version prerelease --preid alpha && npm publish",
+    "v:patch": "npm version patch",
+    "v:alpha": "npm version prerelease --preid alpha"
   },
   "repository": {
     "type": "git",
