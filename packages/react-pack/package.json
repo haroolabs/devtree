@@ -1,6 +1,6 @@
 {
   "name": "@devtree/react-pack",
-  "version": "0.0.4-alpha.4",
+  "version": "0.0.4",
   "description": "Simple tools and ESLint, Prettier configuration for React, Next.js development",
   "files": [
     "compiled",
