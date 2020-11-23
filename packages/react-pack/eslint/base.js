@@ -3,8 +3,9 @@ module.exports = {
   root: true,
   env: {
     browser: true,
+    es6: true,
+    jest: true,
     node: true,
-    es2020: true,
   },
   extends: [
     require.resolve('./airbnb'),
@@ -23,11 +24,11 @@ module.exports = {
   },
   plugins: ['@typescript-eslint', 'prettier', 'react'],
   rules: {
-    'class-methods-use-this': 'off',
-    eqeqeq: 'off',
-    'global-require': 'off',
+    'class-methods-use-this': 0,
+    eqeqeq: 0,
+    'global-require': 0,
     'import/extensions': [
-      'error',
+      2,
       'ignorePackages',
       {
         js: 'never',
@@ -36,25 +37,36 @@ module.exports = {
         tsx: 'never',
       },
     ],
-    'import/no-dynamic-require': 'off',
-    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
-    'no-console': 'off',
-    'no-nested-ternary': 'off',
-    'no-param-reassign': 'off',
-    'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
-    'no-undef': 'off',
-    'no-use-before-define': 'off',
+    'import/no-dynamic-require': 0,
+    'import/no-extraneous-dependencies': [2, { devDependencies: true }],
+    'import/prefer-default-export': 0,
+    'no-console': 0,
+    'no-nested-ternary': 0,
+    'no-param-reassign': 0,
+    'no-plusplus': [2, { allowForLoopAfterthoughts: true }],
+    'no-undef': 0,
+    'no-underscore-dangle': 0,
+    'no-use-before-define': 0,
 
     'react/jsx-filename-extension': [
-      'error',
+      2,
       {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
       },
     ],
-    'react/jsx-one-expression-per-line': 'off',
-    'react/jsx-props-no-spreading': 'off',
+    'react/jsx-one-expression-per-line': 0,
+    'react/jsx-props-no-spreading': 0,
 
-    '@typescript-eslint/no-use-before-define': 'error',
+    '@typescript-eslint/explicit-module-boundary-types': 0,
+    '@typescript-eslint/no-explicit-any': 0,
+    '@typescript-eslint/no-var-requires': 0,
+    '@typescript-eslint/no-use-before-define': 0,
+    '@typescript-eslint/no-unused-vars': [
+      2,
+      {
+        argsIgnorePattern: '^_',
+      },
+    ],
   },
 
   settings: {
@@ -77,9 +89,14 @@ module.exports = {
   // For TypeScript
   overrides: [
     {
-      files: ['**/*.js', '**/*.jsx'],
+      files: ['**/*.ts', '**/*.tsx'],
       rules: {
-        '@typescript-eslint/no-var-requires': 'off',
+        '@typescript-eslint/explicit-module-boundary-types': [
+          1,
+          {
+            allowArgumentsExplicitlyTypedAsAny: true,
+          },
+        ],
       },
     },
   ],
