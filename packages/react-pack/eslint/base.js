@@ -8,10 +8,12 @@ module.exports = {
   },
   extends: [
     require.resolve('./airbnb'),
-    // require.resolve('./airbnb/hooks'),
+    'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
+    'prettier/@typescript-eslint',
     'prettier/react',
   ],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -19,22 +21,54 @@ module.exports = {
     ecmaVersion: 2020,
     sourceType: 'module',
   },
-  plugins: ['prettier', 'react'],
+  plugins: ['@typescript-eslint', 'prettier', 'react'],
   rules: {
     'class-methods-use-this': 'off',
     eqeqeq: 'off',
     'global-require': 'off',
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
     'import/no-dynamic-require': 'off',
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'no-console': 'off',
     'no-nested-ternary': 'off',
     'no-param-reassign': 'off',
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
+    'no-undef': 'off',
     'no-use-before-define': 'off',
+
+    'react/jsx-filename-extension': [
+      'error',
+      {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    ],
     'react/jsx-one-expression-per-line': 'off',
     'react/jsx-props-no-spreading': 'off',
+
+    '@typescript-eslint/no-use-before-define': 'error',
   },
+
   settings: {
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
+    },
+    'import/resolver': {
+      node: {
+        extensions: ['.js', 'jsx', '.json', '.ts', '.tsx', '.d.ts'],
+      },
+      typescript: {
+        /* project: ['tsconfig.json', 'packages/ * /tsconfig.json'], */
+      },
+    },
     react: {
       version: 'detect',
     },
@@ -43,67 +77,9 @@ module.exports = {
   // For TypeScript
   overrides: [
     {
-      files: ['**/*.ts', '**/*.tsx'],
-      extends: [
-        require.resolve('./airbnb'),
-        // require.resolve('./airbnb/hooks'),
-        'plugin:@typescript-eslint/eslint-recommended',
-        'plugin:@typescript-eslint/recommended',
-        'plugin:prettier/recommended',
-        'prettier/@typescript-eslint',
-      ],
-      parser: '@typescript-eslint/parser',
-      parserOptions: {
-        ecmaFeatures: {
-          jsx: true,
-        },
-        ecmaVersion: 2020,
-        project: ['tsconfig.json'],
-        sourceType: 'module',
-      },
-      plugins: ['@typescript-eslint', 'prettier', 'react'],
+      files: ['**/*.js', '**/*.jsx'],
       rules: {
-        'class-methods-use-this': 'off',
-        'import/extensions': [
-          'error',
-          'ignorePackages',
-          {
-            js: 'never',
-            jsx: 'never',
-            ts: 'never',
-            tsx: 'never',
-          },
-        ],
-        'import/no-dynamic-require': 'off',
-        'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
-        'no-console': 'off',
-        'no-nested-ternary': 'off',
-        'no-param-reassign': 'off',
-        'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
-        'no-undef': 'off',
-        'no-use-before-define': 'off',
-        'react/jsx-filename-extension': [
-          'error',
-          {
-            extensions: ['.js', '.jsx', '.ts', '.tsx'],
-          },
-        ],
-        'react/jsx-one-expression-per-line': 'off',
-        'react/jsx-props-no-spreading': 'off',
-        '@typescript-eslint/no-use-before-define': 'error',
-      },
-      settings: {
-        'import/parsers': {
-          '@typescript-eslint/parser': ['.ts', '.tsx'],
-        },
-        'import/resolver': {
-          typescript: {
-            project: ['tsconfig.json', 'packages/*/tsconfig.json'],
-          },
-        },
-        react: {
-          version: 'detect',
-        },
+        '@typescript-eslint/no-var-requires': 'off',
       },
     },
   ],

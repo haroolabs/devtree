@@ -4,6 +4,10 @@
   <img src="https://img.shields.io/github/license/tetritz/devtree?style=for-the-badge" alt="License MIT">
 </p>
 
+This is NOT for PRODUCTION.\
+Now it is in testing.
+---
+
 This package includes the shareable ESLint configuration,
 Prettier configuration for React, Next.js <b>TypeScript</b> development.
 
