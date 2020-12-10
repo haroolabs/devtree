@@ -44,6 +44,7 @@ module.exports = {
     'no-nested-ternary': 0,
     'no-param-reassign': 0,
     'no-plusplus': [2, { allowForLoopAfterthoughts: true }],
+    'no-template-curly-in-string': 0, // for yup interpolation
     'no-undef': 0,
     'no-underscore-dangle': 0,
     'no-use-before-define': 0,
@@ -56,6 +57,7 @@ module.exports = {
     ],
     'react/jsx-one-expression-per-line': 0,
     'react/jsx-props-no-spreading': 0,
+    'react/require-default-props': 0,
 
     '@typescript-eslint/explicit-module-boundary-types': 0,
     '@typescript-eslint/no-explicit-any': 0,
