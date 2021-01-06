@@ -26,6 +26,7 @@ module.exports = {
   rules: {
     'class-methods-use-this': 0,
     eqeqeq: 0,
+    'func-names': 0,
     'global-require': 0,
     'import/extensions': [
       2,
@@ -40,6 +41,7 @@ module.exports = {
     'import/no-dynamic-require': 0,
     'import/no-extraneous-dependencies': [2, { devDependencies: true }],
     'import/prefer-default-export': 0,
+    'lines-between-class-members': [2, 'always', { exceptAfterSingleLine: true }],
     'no-console': 0,
     'no-nested-ternary': 0,
     'no-param-reassign': 0,
@@ -48,6 +50,15 @@ module.exports = {
     'no-undef': 0,
     'no-underscore-dangle': 0,
     'no-use-before-define': 0,
+
+    'jsx-a11y/anchor-is-valid': [
+      2,
+      {
+        components: ['Link'],
+        specialLink: ['hrefLeft', 'hrefRight', 'to'],
+        aspects: ['invalidHref', 'preferButton'],
+      },
+    ],
 
     'react/jsx-filename-extension': [
       2,
@@ -58,6 +69,8 @@ module.exports = {
     'react/jsx-one-expression-per-line': 0,
     'react/jsx-props-no-spreading': 0,
     'react/require-default-props': 0,
+
+    'react-hooks/exhaustive-deps': 1,
 
     '@typescript-eslint/explicit-module-boundary-types': 0,
     '@typescript-eslint/no-explicit-any': 0,

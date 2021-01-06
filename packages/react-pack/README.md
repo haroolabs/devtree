@@ -58,4 +58,4 @@ yarn add -D @devtree/react-pack
 
 ## License
 
-eslint-config-react-pack is licensed under the [MIT License.](https://github.com/tetritz/devtree/blob/main/LICENSE)
+@devtree/react-pack is licensed under the [MIT License.](https://github.com/tetritz/devtree/blob/main/LICENSE)
