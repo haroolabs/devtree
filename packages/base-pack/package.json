@@ -1,7 +1,15 @@
 {
   "name": "@devtree/base-pack",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple tools and ESLint, Prettier configuration for TypeScript development",
+  "keywords": [
+    "dev",
+    "development",
+    "devtree",
+    "eslint",
+    "prettier",
+    "typescript"
+  ],
   "files": [
     "eslint",
     "prettier.js"
