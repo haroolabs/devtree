@@ -14,7 +14,7 @@ Prettier configuration for React, Next.js <b>TypeScript</b> development.
 ## Installation
 - Using npm:
 ```shell script
-npm i @devtree/react-pack
+npm i -D @devtree/react-pack
 ```
 
 - or using yarn:

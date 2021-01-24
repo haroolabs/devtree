@@ -2,6 +2,16 @@
   "name": "@devtree/react-pack",
   "version": "0.0.8",
   "description": "Simple tools and ESLint, Prettier configuration for React, Next.js development",
+  "keywords": [
+    "dev",
+    "development",
+    "devtree",
+    "eslint",
+    "next",
+    "prettier",
+    "react",
+    "typescript"
+  ],
   "files": [
     "eslint",
     "prettier.js"
