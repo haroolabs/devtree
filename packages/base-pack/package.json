@@ -1,8 +1,10 @@
 {
   "name": "@devtree/base-pack",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Simple tools and ESLint, Prettier configuration for TypeScript development",
   "keywords": [
+    "base",
+    "base-pack",
     "dev",
     "development",
     "devtree",
@@ -16,7 +18,7 @@
   ],
   "scripts": {
     "git:push": "git add . && git commit -m 'fix' && git push",
-    "publish:patch": "npm version patch && npm publish",
+    "publish:patch": "npm version patch && yarn git:push && npm publish",
     "publish:alpha": "npm version prerelease --preid alpha && npm publish",
     "v:patch": "npm version patch",
     "v:alpha": "npm version prerelease --preid alpha"

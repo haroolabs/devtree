@@ -77,6 +77,8 @@ module.exports = {
     {
       files: ['**/*.ts'],
       rules: {
+        'import/no-unresolved': 0,
+
         '@typescript-eslint/explicit-module-boundary-types': [
           1,
           {
