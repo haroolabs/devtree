@@ -24,6 +24,7 @@ module.exports = {
     eqeqeq: 0,
     'func-names': 0,
     'global-require': 0,
+    'import/export': 0,
     'import/extensions': [
       2,
       'ignorePackages',

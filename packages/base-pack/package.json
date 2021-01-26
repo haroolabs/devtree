@@ -1,6 +1,6 @@
 {
   "name": "@devtree/base-pack",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple tools and ESLint, Prettier configuration for TypeScript development",
   "keywords": [
     "dev",
