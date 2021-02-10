@@ -106,6 +106,8 @@ module.exports = {
     {
       files: ['**/*.ts', '**/*.tsx'],
       rules: {
+        'import/no-cycle': 0,
+
         '@typescript-eslint/explicit-module-boundary-types': [
           1,
           {
