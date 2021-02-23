@@ -41,6 +41,7 @@ module.exports = {
     'no-nested-ternary': 0,
     'no-param-reassign': 0,
     'no-plusplus': 0,
+    'no-restricted-syntax': 0,
     'no-template-curly-in-string': 0, // for yup interpolation
     'no-undef': 0,
     'no-underscore-dangle': 0,
