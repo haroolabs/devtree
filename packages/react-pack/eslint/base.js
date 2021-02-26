@@ -44,6 +44,7 @@ module.exports = {
     'lines-between-class-members': [2, 'always', { exceptAfterSingleLine: true }],
     'no-await-in-loop': 0,
     'no-console': 0,
+    'no-continue': 0,
     'no-loop-func': 0,
     'no-nested-ternary': 0,
     'no-param-reassign': 0,
