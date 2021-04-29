@@ -1,6 +1,6 @@
 {
   "name": "@devtree/react-pack",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "Simple tools and ESLint, Prettier configuration for React, Next.js development",
   "keywords": [
     "dev",
@@ -25,11 +25,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tetritz/devtree.git",
+    "url": "https://github.com/lightica/devtree.git",
     "directory": "packages/react-pack"
   },
   "bugs": {
-    "url": "https://github.com/tetritz/devtree/issues"
+    "url": "https://github.com/lightica/devtree/issues"
   },
   "author": "Lucas Choi <eterv7@gmail.com>",
   "license": "MIT",
