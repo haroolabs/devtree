@@ -1,6 +1,6 @@
 {
   "name": "@devtree/base-pack",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Simple tools and ESLint, Prettier configuration for TypeScript development",
   "keywords": [
     "base",
@@ -25,11 +25,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tetritz/devtree.git",
+    "url": "https://github.com/lightica/devtree.git",
     "directory": "packages/base-pack"
   },
   "bugs": {
-    "url": "https://github.com/tetritz/devtree/issues"
+    "url": "https://github.com/lightica/devtree/issues"
   },
   "author": "Lucas Choi <eterv7@gmail.com>",
   "license": "MIT",
