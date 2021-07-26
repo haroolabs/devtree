@@ -1,6 +1,6 @@
 {
   "name": "@devtree/react-pack",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "Simple tools and ESLint, Prettier configuration for React, Next.js development",
   "keywords": [
     "dev",
@@ -25,28 +25,28 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lightica/devtree.git",
+    "url": "https://github.com/haroolabs/devtree.git",
     "directory": "packages/react-pack"
   },
   "bugs": {
-    "url": "https://github.com/lightica/devtree/issues"
+    "url": "https://github.com/haroolabs/devtree/issues"
   },
   "author": "Lucas Choi <eterv7@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.22.0",
-    "@typescript-eslint/parser": "^4.22.0",
-    "eslint": "^7.25.0",
+    "@typescript-eslint/eslint-plugin": "^4.27.0",
+    "@typescript-eslint/parser": "^4.27.0",
+    "eslint": "^7.29.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-import-resolver-typescript": "^2.4.0",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "prettier": "^2.2.1",
-    "typescript": "^4.2.4"
+    "prettier": "^2.3.1",
+    "typescript": "^4.3.4"
   },
   "eslintConfig": {
     "extends": [
