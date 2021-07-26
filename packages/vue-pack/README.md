@@ -1,7 +1,7 @@
 # @devtree/vue-pack
 
 <p align="center">
-  <img src="https://img.shields.io/github/license/tetritz/devtree?style=for-the-badge" alt="License MIT">
+  <img src="https://img.shields.io/github/license/haroolabs/devtree?style=for-the-badge" alt="License MIT">
 </p>
 
 This is NOT for PRODUCTION.\
@@ -58,4 +58,4 @@ yarn add -D @devtree/vue-pack
 
 ## License
 
-@devtree/vue-pack is licensed under the [MIT License.](https://github.com/tetritz/devtree/blob/main/LICENSE)
+@devtree/vue-pack is licensed under the [MIT License.](https://github.com/haroolabs/devtree/blob/main/LICENSE)
