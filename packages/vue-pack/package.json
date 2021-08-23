@@ -1,6 +1,6 @@
 {
   "name": "@devtree/vue-pack",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Simple tools and ESLint, Prettier configuration for Vue development",
   "keywords": [
     "dev",
@@ -33,18 +33,18 @@
   "author": "Lucas Choi <eterv7@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.26.0",
-    "@typescript-eslint/parser": "^4.26.0",
+    "@typescript-eslint/eslint-plugin": "^4.29.2",
+    "@typescript-eslint/parser": "^4.29.2",
     "@vue/eslint-config-typescript": "^7.0.0",
-    "eslint": "^7.27.0",
+    "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-vue": "^7.10.0",
-    "prettier": "^2.3.0",
-    "typescript": "^4.3.2"
+    "eslint-plugin-prettier": "^3.4.1",
+    "eslint-plugin-vue": "^7.16.0",
+    "prettier": "^2.3.2",
+    "typescript": "^4.3.5"
   },
   "peerDependencies": {
-    "eslint-plugin-prettier": "^3.4.0"
+    "eslint-plugin-prettier": "^3.4.1"
   },
   "eslintConfig": {
     "extends": [
